@@ -8,6 +8,18 @@ import react from "../img/react.png";
 import redux from "../img/redux.png";
 
 const Conatiner = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Title = styled.h2`
+  text-align: center;
+`;
+
+const Div = styled.div`
   display: flex;
 `;
 
@@ -44,14 +56,16 @@ const ImgBox = styled.div`
 function Skill() {
   return (
     <div>
-      <h2>SKILLS</h2>
       <Conatiner>
-        <ImgBox />
-        <ImgBox />
-        <ImgBox />
-        <ImgBox />
-        <ImgBox />
-        <ImgBox />
+        <Title>SKILLS</Title>
+        <Div>
+          <ImgBox />
+          <ImgBox />
+          <ImgBox />
+          <ImgBox />
+          <ImgBox />
+          <ImgBox />
+        </Div>
       </Conatiner>
     </div>
   );
